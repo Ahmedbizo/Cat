@@ -4,7 +4,10 @@
   justify-content: space-between;
   align-items: center;
   padding: 6rem;
+  padding-left: 16rem;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
 }
 
 .description {
@@ -25,7 +28,6 @@
   position: relative;
   padding: 4rem 0;
 }
-
 
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
@@ -51,4 +53,16 @@
   flex-direction: column;
   flex-basis: 100%;
   flex: 1;
+}
+
+.headerImage {
+  margin-bottom: 3rem;
+  margin-right: 100px;
+}
+
+.listHeader {
+  margin-left: 6rem;
+  color: #84dcc6;
+  font-family: cursive;
+  margin-top: -1rem;
 }

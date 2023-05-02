@@ -1,0 +1,73 @@
+.footerContainer {
+  background: rgb(254, 251, 251);
+  width: 77rem;
+  height: 6rem;
+  border-radius: 1rem;
+  border: 2px solid #bbb2f0;
+  margin-top: 4rem;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: space-between;
+}
+
+.dropdown {
+  margin-left: 3rem;
+  width: 10rem;
+  height: 3rem;
+  cursor: pointer;
+  margin-top: 1.2rem;
+  background: white;
+  border-radius: 1.5rem;
+  border: 2px solid #9381ff;
+  color: #9a93bf;
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); /* Add custom arrow */
+  background-position: right 0.2rem center;
+  background-repeat: no-repeat;
+  padding-right: 1.4rem;
+}
+
+.aligment {
+  display: flex;
+  justify-content: space-between;
+  border: 2px dotted #9381ff;
+  padding-left: 1.875rem;
+  border-radius: 1rem;
+  margin: 10px;
+}
+.carAligment {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 0.6rem;
+  background: white;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  border: 2px solid #9381ff;
+  color: #9a93bf;
+  font-size: 1.25rem;
+  font-weight: 800;
+  padding-top: 10px;
+}
+
+.truckAligment {
+  display: flex;
+  justify-content: center;
+  width: 10rem;
+  height: 3rem;
+  margin-top: 0.6rem;
+  background: white;
+  border-radius: 1rem;
+  margin-right: 1rem;
+  border: 2px solid #9381ff;
+  color: #9a93bf;
+  font-size: 20px;
+  font-weight: 800;
+  padding-top: 10px;
+}

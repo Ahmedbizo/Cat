@@ -1,0 +1,91 @@
+.favoriteButton {
+  text-align: center;
+  font-size: 1rem;
+  color: red;
+  background: white;
+  border: none;
+  display: flex;
+}
+
+.nickName {
+  z-index: 100;
+  position: relative;
+  text-align: start;
+  top: 2.5rem;
+  margin-left: 1rem;
+  color: white;
+  text-shadow: 2px 2px 0 #9381ff, -2px -2px 0 #9381ff, 2px -2px 0 #9381ff,
+    -2px 2px 0 #9381ff;
+}
+.catList {
+  margin-left: 6.25rem;
+  height: 50rem;
+  overflow-y: hidden;
+  padding: 2.5rem;
+  border: 2px solid #9381ff;
+  border-radius: 6px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.cardCat {
+  height: 100%;
+  overflow-x: scroll;
+}
+
+.commentInput {
+  width: 21rem;
+  height: 1.5rem;
+  background: white;
+  border: 1px solid #9381ff;
+  border-radius: 6px;
+  margin-right: 4px;
+  margin-left: 6px;
+  padding-left: 4px;
+  color: black;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.commentInput input::placeholder {
+  color: rgb(197, 197, 197);
+}
+
+.submitComment {
+  background: #9381ff;
+  color: white;
+  padding: 2px;
+  border: #9381ff;
+  border-radius: 6px;
+  text-transform: uppercase;
+}
+
+.likeButton {
+  background: none;
+  cursor: pointer;
+  display: flex;
+  z-index: 100;
+  position: relative;
+  text-align: start;
+  top: -35px;
+  left: 10px;
+  color: white;
+  text-shadow: 2px 2px 0 #9381ff, -2px -2px 0 #9381ff, 2px -2px 0 #9381ff,
+    -2px 2px 0 #9381ff;
+  border: none;
+}
+
+.likeIcon {
+  margin-right: 0.4rem;
+  font-size: 1.2rem;
+}
+
+.liked {
+  color: #ff6363;
+}
+.dropdown {
+  color: red;
+}
+.panelImage {
+  border-radius: 30px;
+  border: 2px solid #9381ff;
+}
