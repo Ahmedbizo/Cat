@@ -38,7 +38,7 @@ const CatCardCreator: React.FC = () => {
     }
   };
 
-  const handleSaveCat = () => {
+  const handleSaveCat = async () => {
     if (!catName) {
       const message = `You have to add cat name !!`;
       toast.error(message);
@@ -46,9 +46,31 @@ const CatCardCreator: React.FC = () => {
     }
 
     const newCat = { name: catName, image: catImage };
-    const cats = JSON.parse(localStorage.getItem("cats") || "[]");
-    cats.push(newCat);
-    localStorage.setItem("cats", JSON.stringify(cats));
+    try {
+      const response = await fetch(`http://localhost:3001/users`);
+      const data = await response.json();
+      console.log(data);
+      if (data.users?.length > 0) {
+        const firstUser = data.users[0];
+        if (firstUser.herd) {
+          firstUser.herd.push(newCat);
+        } else {
+          firstUser.herd = [newCat];
+        }
+      } else {
+        data.users = [{ herd: [newCat] }];
+      }
+      await fetch("http://localhost:3001/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+    } catch (error) {
+      console.error(error);
+    }
+
     const message = `Your cat "${catName}" has been saved!`;
     setCatName("");
     setCatImage(catImage);
